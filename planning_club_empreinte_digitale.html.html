@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, itial-scale=1.0">
+    <title>Générateur de Planning - Club Empreinte Digitale</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background-color: #f9f9f9; }
+        h1 { text-align: center; color: #2d2d2d; }
+        .container { max-width: 800px; margin: 0 auto; background-color: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        footer { text-align: center; font-size: 0.8em; margin-top: 30px; padding-top: 20px; border-top: 1px solid #ccc; }
+        footer div { margin-bottom: 10px; }
+        .generate-btn { display: block; width: 100%; padding: 10px; margin-top: 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer; font-size: 16px; }
+        .generate-btn:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Générateur de Planning - Club Empreinte Digitale</h1>
+
+    <form id="planning-form">
+        <label for="energy-level">Niveau d'énergie :</label>
+        <select id="energy-level" name="energy-level">
+            <option value="haut">Haut</option>
+            <option value="moyen">Moyen</option>
+            <option value="bas">Bas</option>
+        </select><br><br>
+
+        <label for="priority">Priorités du jour :</label>
+        <textarea id="priority" name="priority" rows="4" placeholder="Listez vos priorités ici"></textarea><br><br>
+
+        <label for="routine">Routine souhaitée :</label>
+        <textarea id="routine" name="routine" rows="4" placeholder="Détaillez votre routine idéale"></textarea><br><br>
+
+        <button type="button" class="generate-btn" onclick="generatePlanning()">Générer Mon Planning</button>
+    </form>
+
+    <div id="generated-planning"></div>
+
+    <button id="sync-calendar-btn" class="generate-btn" onclick="syncToGoogleCalendar()" style="display:none;">Synchroniser avec Google Calendar</button>
+
+    <footer>
+        <div id="copyright-prettyhowq">
+            © Yakoubi Yamina – Tous droits réservés<br>
+            Let’s keep building, PrettyhowQ style.<br>
+            حقوق النشر محفوظة © ياكوبي يمينة<br>
+        </div>
+    </footer>
+</div>
+
+<script src="https://apis.google.com/js/api.js"></script>
+<script>
+    let gapiInitialized = false;
+
+    function initGoogleAPI() {
+        gapi.load("client:auth2", initAuth);
+    }
+
+    function initAuth() {
+        gapi.auth2.init({
+            client_id: "YOUR_GOOGLE_CLIENT_ID"
+        }).then(function () {
+            gapiInitialized = true;
+        });
+    }
+
+    function generatePlanning() {
+        const energyLevel = document.getElementById("energy-level").value;
+        const priorities = document.getElementById("priority").value;
+        const routine = document.getElementById("routine").value;
+
+        let planningMessage = "<h2>Votre Planning Personnalisé :</h2><ul>";
+
+        planningMessage += `<li><strong>Niveau d'énergie :</strong> ${energyLevel}</li>`;
+        planningMessage += `<li><strong>Priorités du jour :</strong><ul><li>${priorities.replace(/\n/g, "<li>")}</li></ul></li>`;
+        planningMessage += `<li><strong>Routine souhaitée :</strong><ul><li>${routine.replace(/\n/g, "<li>")}</li></ul></li>`;
+
+        planningMessage += "</ul>";
+        document.getElementById("generated-planning").innerHTML = planningMessage;
+        document.getElementById("sync-calendar-btn").style.display = "block"; // Affiche le bouton de synchronisation
+    }
+
+    function syncToGoogleCalendar() {
+        if (!gapiInitialized) {
+            alert("Google API n'est pas encore initialisé.");
+            return;
+        }
+
+        const event = {
+            'summary': 'Formation - Club Empreinte Digitale',
+            'description': 'Session de formation de la journée selon le planning.',
+            'start': {
+                'dateTime': new Date().toISOString(),
+                'timeZone': 'Europe/Paris',
+            },
+            'end': {
+                'dateTime': new Date(new Date().getTime() + 60 * 60 * 1000).toISOString(), // Une heure plus tard
+                'timeZone': 'Europe/Paris',
+            },
+        };
+
+        gapi.client.calendar.events.insert({
+            'calendarId': 'primary',
+            'resource': event,
+        }).then(function (response) {
+            alert("L'événement a été ajouté à votre Google Calendar !");
+        }, function (error) {
+            alert("Erreur lors de l'ajout à Google Calendar: " + error.message);
+        });
+    }
+
+    window.onload = function () {
+        initGoogleAPI();
+    };
+</script>
+
+</body>
+</html>
