@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+
+# © Yakoubi Yamina – Tous droits réservés
+# Interdiction formelle de reproduction, diffusion ou réutilisation sans autorisation écrite<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -13,6 +15,10 @@
     .desc { color: #555; font-size: 0.95em; }
     h2 { margin-top: 40px; color: #333; }
     .modules { background: #fff; border-radius: 8px; padding: 20px; box-shadow: 0 2px 8px #0001; }
+    body {
+      background: url('PrettyhowQ_logo.png') no-repeat center center fixed;
+      background-size: cover;
+    }
   </style>
 </head>
 <body>
@@ -54,5 +60,28 @@
       <li>Agent virtuel PrettyhowQ</li>
     </ul>
   </div>
+  <h2>Générateur de vCard - Club Empreinte Digitale</h2>
+  <p style="font-weight:bold;">Développé par Yakoubi Yamina</p>
+  <form method="post">
+    Nom : <input name="name" required><br>
+    Email : <input name="email" required><br>
+    Métier : <input name="job"><br>
+    LinkedIn : <input name="linkedin"><br>
+    X (Twitter) : <input name="twitter"><br>
+    Club Empreinte Digitale (profil) : <input name="club_profile"><br>
+    <button type="submit">Générer ma vCard</button>
+  </form>
+  <section style="text-align:center; margin-top:40px;">
+    <h3>Présentation audio de PrettyhowQ et du Club Empreinte Digitale</h3>
+    <audio controls>
+      <source src="/static/presentation_prettyhowq.mp3" type="audio/mpeg">
+      Votre navigateur ne supporte pas la lecture audio.
+    </audio>
+    <p style="margin-top:10px; font-size:0.95em;">
+      © 2024 Yakoubi Yamina. Voix, texte et identité sonore protégés.<br>
+      Toute reproduction ou diffusion sans autorisation est interdite.<br>
+      All rights reserved. جميع الحقوق محفوظة.
+    </p>
+  </section>
 </body>
 </html>
