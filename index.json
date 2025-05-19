@@ -1,0 +1,252 @@
+
+  "fr": [
+    {
+      "title": "Titre du prompt",
+      "text": "Texte du prompt"
+    },
+    {
+      "title": "Deuxième prompt",
+      "text": "Texte du deuxième prompt"
+    }
+  ],
+  "en": [
+    {
+      "title": "Prompt title",
+      "text": "Prompt text"
+    },
+    {
+      "title": "Second prompt",
+      "text": "Second prompt text"
+    }
+  ],
+  "es": [
+    {
+      "title": "Título del aviso",
+      "text": "Texto del aviso"
+    },
+    {
+      "title": "Segundo aviso",
+      "text": "Texto del segundo aviso"
+    }
+  ],
+  "de": [
+    {
+      "title": "Aufforderungstitel",
+      "text": "Aufforderungstext"
+    },
+    {
+      "title": "Zweite Aufforderung",
+      "text": "Text der zweiten Aufforderung"
+    }
+  ],
+  "it": [
+    {
+      "title": "Titolo del prompt",
+      "text": "Testo del prompt"
+    },
+    {
+      "title": "Secondo prompt",
+      "text": "Testo del secondo prompt"
+    }
+  ],
+  "pt": [
+    {
+      "title": "Título do aviso",
+      "text": "Texto do aviso"
+    },
+    {
+      "title": "Segundo aviso",
+      "text": "Texto do segundo aviso"
+    }
+  ],
+  "ja": [
+    {
+      "title": "プロンプトのタイトル",
+      "text": "プロンプトのテキスト"
+    },
+    {
+      "title": "セカンドプロンプト",
+      "text": "セカンドプロンプトのテキスト"
+    }
+  ],
+  "zh": [
+    {
+      "title": "提示标题",
+      "text": "提示文本"
+    },
+    {
+      "title": "第二个提示",
+      "text": "第二个提示文本"
+    }
+  ],
+  "ru": [
+    {
+      "title": "Заголовок подсказки",
+      "text": "Текст подсказки"
+    },
+    {
+      "title": "Вторая подсказка",
+      "text": "Текст второй подсказки"
+    }
+  ],
+  "ar": [
+    {
+      "title": "عنوان المطالبة",
+      "text": "نص المطالبة"
+    },
+    {
+      "title": "المطالبة الثانية",
+      "text": "نص المطالبة الثانية"
+    }
+  ],
+  "tr": [
+    {
+      "title": "İstem başlığı",
+      "text": "İstem metni"
+    },
+    {
+      "title": "İkinci istem",
+      "text": "İkinci istem metni"
+    }
+  ],
+  "nl": [
+    {
+      "title": "Prompt titel",
+      "text": "Prompt tekst"
+    },
+    {
+      "title": "Tweede prompt",
+      "text": "Tekst van de tweede prompt"
+    }
+  ],
+  "pl": [
+    {
+      "title": "Tytuł monitu",
+      "text": "Tekst monitu"
+    },
+    {
+      "title": "Drugi monit",
+      "text": "Tekst drugiego monitu"
+    }
+  ],
+  "ko": [
+    {
+      "title": "프롬프트 제목",
+      "text": "프롬프트 텍스트"
+    },
+    {
+      "title": "두 번째 프롬프트",
+      "text": "두 번째 프롬프트 텍스트"
+    }
+  ],
+  "sv": [
+    {
+      "title": "Prompttitel",
+      "text": "Prompttext"
+    },
+    {
+      "title": "Andra uppmaningen",
+      "text": "Text för den andra uppmaningen"
+    }
+  ],
+  "fi": [
+    {
+      "title": "Kehoitusteksti",
+      "text": "Kehoitusteksti"
+    },
+    {
+      "title": "Toinen kehotus",
+      "text": "Toisen kehotuksen teksti"
+    }
+  ],
+  "da": [
+    {
+      "title": "Prompttitel",
+      "text": "Prompttekst"
+    },
+    {
+      "title": "Anden prompt",
+      "text": "Tekst til den anden prompt"
+    }
+  ],
+  "no": [
+    {
+      "title": "Prompttittel",
+      "text": "Prompttekst"
+    },
+    {
+      "title": "Andre oppfordring",
+      "text": "Tekst for den andre oppfordringen"
+    }
+  ],
+  "cs": [
+    {
+      "title": "Název výzvy",
+      "text": "Text výzvy"
+    },
+    {
+      "title": "Druhá výzva",
+      "text": "Text druhé výzvy"
+    }
+  ],
+  "hu": [
+    {
+      "title": "Kérdés címe",
+      "text": "Kérdés szövege"
+    },
+    {
+      "title": "Második kérdés",
+      "text": "A második kérdés szövege"
+    }
+  ],
+  "ro": [
+    {
+      "title": "Titlul solicitării",
+      "text": "Textul solicitării"
+    },
+    {
+      "title": "A doua solicitare",
+      "text": "Textul celei de-a doua solicitări"
+    }
+  ],
+  "bg": [
+    {
+      "title": "Заглавие на подканата",
+      "text": "Текст на подканата"
+    },
+    {
+      "title": "Втора подканя",
+      "text": "Текст на втората подканя"
+    }
+  ],
+  "sk": [
+    {
+      "title": "Názov výzvy",
+      "text": "Text výzvy"
+    },
+    {
+      "title": "Druhá výzva",
+      "text": "Text druhej výzvy"
+    }
+  ],
+  "th": [
+    {
+      "title": "ชื่อคำกระตุ้น",
+      "text": "ข้อความคำกระตุ้น"
+    },
+    {
+      "title": "คำกระตุ้นที่สอง",
+      "text": "ข้อความของคำกระตุ้นที่สอง"
+    }
+  ],
+  "vi": [
+    {
+      "title": "Tiêu đề nhắc nhở",
+      "text": "Văn bản nhắc nhở"
+    },
+    {
+      "title": "Nhắc nhở thứ hai",
+      "text": "Văn bản của nhắc nhở thứ hai"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "fr": [
+    {
+      "title": "Titre du prompt",
+      "text": "Texte du prompt"
+    },
+    {
+      "title": "Deuxième prompt",
+      "text": "Texte du deuxième prompt"
+    }
+  ],
+  "en": [
+    {
+      "title": "Prompt title",
+      "text": "Prompt text"
+    },
+    {
+      "title": "Second prompt",
+      "text": "Second prompt text"
+    }
+  ]
+}

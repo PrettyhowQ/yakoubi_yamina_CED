@@ -1,0 +1,11 @@
+# Connecte-toi à Azure
+az login
+
+# Crée un groupe de ressources
+az group create --name ClubEmpreinteDigitaleRG --location "East US"
+
+# Crée un App Service Plan (hébergement)
+az appservice plan create --name ClubEmpreintePlan --resource-group ClubEmpreinteDigitaleRG --sku B1 --is-linux
+
+# Crée une application web (frontend ou backend)
+az webapp create --resource-group ClubEmpreinteDigitaleRG --plan ClubEmpreintePlan --name ClubEmpreinteApp --runtime "NODE|18-lts"

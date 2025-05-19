@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interface Centralisée - Projets JSitor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    .project-list {
+      list-style: none;
+      padding: 0;
+    }
+    .project-list li {
+      margin: 10px 0;
+    }
+    .project-list a {
+      text-decoration: none;
+      color: #3498db;
+    }
+    .project-list a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Interface Centralisée - Projets JSitor</h1>
+  <ul class="project-list">
+    <li><a href="./projet1/index.html" target="_blank">Projet 1</a></li>
+    <li><a href="./projet2/index.html" target="_blank">Projet 2</a></li>
+    <!-- Ajoute d'autres projets ici -->
+  </ul>
+
+  <h1>Gestion du temps</h1>
+
+  <!-- Module Pomodoro -->
+  <div class="pomodoro">
+    <h2>Pomodoro</h2>
+    <div id="timer">25:00</div>
+    <button onclick="startPomodoro()">Démarrer</button>
+    <button onclick="resetPomodoro()">Réinitialiser</button>
+    <div id="pomodoro-status"></div>
+  </div>
+
+  <!-- Module Agenda -->
+  <div class="agenda">
+    <h2>Agenda / Planning</h2>
+    <input type="date" id="agenda-date">
+    <input type="text" id="agenda-task" placeholder="Ajouter une tâche...">
+    <button onclick="addTask()">Ajouter</button>
+    <ul id="agenda-list"></ul>
+  </div>
+
+  <script>
+    // Pomodoro
+    let pomodoroTime = 25 * 60;
+    let timerInterval;
+    function updateTimer() {
+      let min = Math.floor(pomodoroTime / 60);
+      let sec = pomodoroTime % 60;
+      document.getElementById('timer').textContent = `${min.toString().padStart(2, '0')}:${sec.toString().padStart(2, '0')}`;
+    }
+    function startPomodoro() {
+      document.getElementById('pomodoro-status').textContent = "Session en cours...";
+      if (timerInterval) clearInterval(timerInterval);
+      timerInterval = setInterval(() => {
+        if (pomodoroTime > 0) {
+          pomodoroTime--;
+          updateTimer();
+        } else {
+          clearInterval(timerInterval);
+          document.getElementById('pomodoro-status').textContent = "Temps écoulé ! Prends une pause 😊";
+        }
+      }, 1000);
+    }
+    function resetPomodoro() {
+      pomodoroTime = 25 * 60;
+      updateTimer();
+      document.getElementById('pomodoro-status').textContent = "";
+      clearInterval(timerInterval);
+    }
+    updateTimer();
+
+    // Agenda
+    function addTask() {
+      const date = document.getElementById('agenda-date').value;
+      const task = document.getElementById('agenda-task').value;
+      if (date && task) {
+        const li = document.createElement('li');
+        li.textContent = `${date} : ${task}`;
+        document.getElementById('agenda-list').appendChild(li);
+        document.getElementById('agenda-task').value = '';
+      }
+    }
+  </script>
+</body>
+</html>

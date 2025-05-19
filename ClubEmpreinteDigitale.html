@@ -1,0 +1,55 @@
+/ClubEmpreinteDigitale/
+│
+├── README.md
+├── .gitignore
+├── docs/                # Documentation d’utilisation, cahier des charges, architecture
+├── src/                 # Code source principal
+│   ├── web/             # Frontend web (HTML, CSS, JS, React, etc.)
+│   ├── mobile/          # Code mobile (Swift, Kotlin, etc.)
+│   └── api/             # Backend/API (Python, Node.js, etc.)
+├── assets/              # Images, vidéos, PDF, ressources statiques
+├── database/            # Scripts de création de base de données, modèles
+├── prototypes/          # Maquettes Figma, wireframes, prototypes visuels
+└── scripts/             # Scripts d’automatisation, déploiement Azure, etc.
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Empreinte Digitale - Interface</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 20px; background-color: #f4f4f4; }
+    h1 { color: #333; }
+    .project-list { list-style: none; padding: 0; }
+    .project-list li { margin: 20px 0; }
+    .project-list a {
+      text-decoration: none;
+      color: #4CAF50;
+      font-size: 1.2em;
+      border: 1px solid #4CAF50;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .project-list a:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Club Empreinte Digitale - Interface</h1>
+  <ul class="project-list">
+    <li><a href="./planning/index.html" target="_blank">Générateur de Planning</a></li>
+    <li><a href="./demo3d/index.html" target="_blank">Démo 3D PrettyhowQ</a></li>
+  </ul>
+</body>
+</html>
+   │    ├── styles.css         <-- (Optionnel) Fichier CSS pour le planning
+   │    └── script.js          <-- (Optionnel) Fichier JS pour le planning
+   ├── demo3d/
+   │    ├── index.html         <-- Démo 3D PrettyhowQ
+   │    ├── styles.css         <-- (Optionnel) Fichier CSS pour la démo 3D
+   │    └── script.js          <-- (Optionnel) Fichier JS pour la démo 3D
+   └── index.html              <-- Interface centralisée pour accéder aux deux projets
