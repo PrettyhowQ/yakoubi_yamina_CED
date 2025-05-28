@@ -1,58 +1,62 @@
-<!DOCTYPE html>
+<!-- 
+  © 2025 Yakoubi Yamina – Tous droits réservés.
+  © 2025 Yakoubi Yamina – All rights reserved.
+  © 2025 ياقوبي يمينة – جميع الحقوق محفوظة.
+  Ce code est protégé par la licence propriétaire CEDPro.
+  Reproduction ou usage interdits sans autorisation écrite.
+  --><!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Vue d'ensemble - CEDPro / PrettyhowQ Learn Pro</title>
-  <style>
-    body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 30px; }
-    h1 { color: #4CAF50; }
-    ul { list-style: none; padding: 0; }
-    li { margin: 15px 0; }
-    a { color: #4CAF50; text-decoration: none; font-weight: bold; }
-    a:hover { text-decoration: underline; }
-    .desc { color: #555; font-size: 0.95em; }
-    h2 { margin-top: 40px; color: #333; }
-    .modules { background: #fff; border-radius: 8px; padding: 20px; box-shadow: 0 2px 8px #0001; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Club Empreinte Digitale & PrettyhowQ</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Vue d'ensemble du site</h1>
-  <ul>
-    <li>
-      <a href="./frontend/index.html" target="_blank">Interface principale (Frontend)</a>
-      <div class="desc">Accueil, navigation, accès aux modules principaux</div>
-    </li>
-    <li>
-      <a href="./backend/" target="_blank">API Backend</a>
-      <div class="desc">Gestion des données, sécurité, logique métier</div>
-    </li>
-    <li>
-      <a href="./editor-core/" target="_blank">Éditeur de code intégré</a>
-      <div class="desc">Monaco Editor pour l’édition de code en ligne</div>
-    </li>
-    <li>
-      <a href="./docs/" target="_blank">Documentation</a>
-      <div class="desc">Cahier des charges, architecture, guides</div>
-    </li>
-    <li>
-      <a href="./legal/" target="_blank">Légal</a>
-      <div class="desc">Licences, copyright, mentions légales</div>
-    </li>
-    <li>
-      <a href="./README.md" target="_blank">README.md</a>
-      <div class="desc">Documentation technique du projet</div>
-    </li>
-  </ul>
-  <h2>Modules fonctionnels</h2>
-  <div class="modules">
+  <!-- 
+  © 2025 Yakoubi Yamina – Tous droits réservés.
+  © 2025 Yakoubi Yamina – All rights reserved.
+  © 2025 ياقوبي يمينة – جميع الحقوق محفوظة.
+  Ce code est protégé par la licence propriétaire CEDPro.
+  Reproduction ou usage interdits sans autorisation écrite.
+  -->
+
+  <header>
+    <h1>Bienvenue dans le Club Empreinte Digitale</h1>
+    <p>Avec PrettyhowQ – l’IA qui vous parle avec le cœur</p>
+  </header>
+
+  <section id="prettyhowq">
+    <img src="PrettyhowQ_logo.png" alt="Logo PrettyhowQ" width="150" />
+    <button onclick="parler()">Parler à PrettyhowQ</button>
+    <audio id="voice" src="static/presentation_prettyhowq.mp3"></audio>
+  </section>
+
+  <section id="generateurs">
+    <h2>Explorez nos générateurs</h2>
     <ul>
-      <li>Générateur de calendrier et Pomodoro</li>
-      <li>Générateur de formations et certifications</li>
-      <li>Espace anti-gaspillage et économie circulaire</li>
-      <li>Générateur de conformité produits de luxe</li>
-      <li>Réseau social privé (Club Empreinte Digitale)</li>
-      <li>Agent virtuel PrettyhowQ</li>
+      <li><a href="frontend/src/generators/ProductivityGenerator/index.js">Productivité & Organisation</a></li>
+      <li><a href="frontend/src/generators/LearningGenerator/index.js">Apprentissage Accéléré</a></li>
+      <li><a href="frontend/src/generators/ViralContentGenerator/index.js">Contenu Viral</a></li>
+      <li><a href="frontend/src/generators/CopywritingPersuasionGenerator/index.js">Copywriting & Persuasion</a></li>
+      <li><a href="frontend/src/generators/DigitalBusinessGenerator/index.js">Business Digital</a></li>
+      <li><a href="frontend/src/generators/MindsetClarityGenerator/index.js">Mindset & Clarté</a></li>
+      <li><a href="frontend/src/generators/AutomationAIGenerator/index.js">Automatisation & IA</a></li>
+      <li><a href="frontend/src/generators/SocialGrowthGenerator/index.js">Réseaux Sociaux</a></li>
+      <li><a href="frontend/src/generators/DigitalProductsGenerator/index.js">Produits Digitaux</a></li>
+      <li><a href="frontend/src/generators/CoachingVisionGenerator/index.js">Coaching IA & Vision</a></li>
     </ul>
-  </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Yakoubi Yamina – Club Empreinte Digitale & PrettyhowQ</p>
+  </footer>
+
+  <script>
+    function parler() {
+      const audio = document.getElementById('voice');
+      audio.play();
+    }
+  </script>
 </body>
 </html>

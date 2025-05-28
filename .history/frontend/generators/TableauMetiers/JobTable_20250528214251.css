@@ -1,0 +1,36 @@
+.job-table {
+  padding: 20px;
+  background-color: #121c2d;
+  color: gold;
+}
+
+.job-table h2 {
+  text-align: center;
+  color: gold;
+}
+
+.job-table input {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  background-color: #0b1320;
+  border: 1px solid gold;
+  color: gold;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: gold;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid gold;
+  text-align: left;
+}
+
+th {
+  background-color: #19253b;
+}

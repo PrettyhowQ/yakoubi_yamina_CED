@@ -1,0 +1,6 @@
+// 
+// © 2025 Yakoubi Yamina – Tous droits réservés.
+// © 2025 Yakoubi Yamina – All rights reserved.
+// © 2025 ياقوبي يمينة – جميع الحقوق محفوظة.
+// Ce code est protégé par la licence propriétaire CEDPro.
+// Reproduction ou usage interdits sans autorisation écrite.

@@ -1,0 +1,1 @@
+import JobTable from './components/JobTable';

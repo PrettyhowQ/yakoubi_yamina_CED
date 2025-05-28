@@ -1,0 +1,37 @@
+# Structure du projet club-empreinte-digitale-structure-avec-start
+
+club-empreinte-digitale-structure-avec-start/
+│
+├── frontend/                           ← Interface utilisateur
+│   ├── index.html                      ← Page d’accueil HTML
+│   ├── formulaire_club.html            ← Formulaire vCard
+│   ├── styles.css                      ← Feuille de styles CSS
+│   ├── i18n/                           ← Traductions multilingues
+│   │   ├── fr.json
+│   │   ├── en.json
+│   │   ├── ar.json
+│   │   └── i18n.js
+│   └── images/
+│       └── PrettyhowQ_logo.png
+│
+├── backend/                            ← Traitement côté serveur
+│   ├── app.py
+│   ├── routes.py
+│   └── database/
+│       └── models.py
+│
+├── docs/                               ← Documentation projet
+│   ├── README.md                       ← Présentation technique
+│   ├── cahier_des_charges.md           ← Description des besoins
+│   └── planning_club_empreinte_digitale.html ← Planning interactif HTML
+│
+├── legal/                              ← Mentions légales et licences
+│   ├── LICENSE.txt
+│   └── mentions_legales.html
+│
+├── README.md                           ← Documentation globale du projet
+├── .gitignore                          ← Exclusions Git
+├── package.json                        ← Config Node.js/React (si utilisé)
+├── .vscode/
+│   └── settings.json
+└── .history/

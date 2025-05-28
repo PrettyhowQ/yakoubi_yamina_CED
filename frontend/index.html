@@ -1,11 +1,28 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!-- 
+  © 2025 Yakoubi Yamina – Tous droits réservés.
+  © 2025 Yakoubi Yamina – All rights reserved.
+  © 2025 ياقوبي يمينة – جميع الحقوق محفوظة.
+  Ce code est protégé par la licence propriétaire CEDPro.
+  Reproduction ou usage interdits sans autorisation écrite.
+-->
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>Club Empreinte Digitale</title>
 </head>
+<script>
+  function parler() {
+    const audio = document.getElementById('voice');
+    audio.play();
+  }
+</script>
 <body>
     <h1>Bienvenue dans le Club Empreinte Digitale &amp; PrettyhowQ</h1>
     <p>Le premier générateur arrive bientôt...</p>
 </body>
 </html>
+<section id="prettyhowq">
+  <img src="../static/PrettyhowQ_logo.png" alt="PrettyhowQ Logo" width="150" />
+  <button onclick="parler()">Parler à PrettyhowQ</button>
+  <audio id="voice" src="../static/presentation_prettyhowq.mp3"></audio>
+</section>
