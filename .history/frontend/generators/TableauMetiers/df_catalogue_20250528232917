@@ -1,0 +1,8 @@
+from IPython.display import display
+
+df_catalogue.to_csv("catalogue_IA_formations.csv", index=False)
+df_catalogue.to_html("catalogue_IA_formations.html", index=False)
+df_catalogue.to_json("catalogue_IA_formations.json", orient="records", force_ascii=False, indent=2)
+# Affiche le DataFrame complet sous forme de texte dans la console
+print(df_catalogue.to_string())
+display(df_catalogue)

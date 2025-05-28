@@ -1,0 +1,4 @@
+df_catalogue.to_csv("catalogue_IA_formations.csv", index=False)
+df_catalogue.to_html("catalogue_IA_formations.html", index=False)
+# Affiche le DataFrame complet sous forme de texte dans la console
+print(df_catalogue.to_string())
